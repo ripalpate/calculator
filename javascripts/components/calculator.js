@@ -2,6 +2,13 @@
 import {printToDom} from '../helpers/utility.js';
 import {multiply, divide, add, subtract} from '../helpers/maths.js';
 
+const calc ={
+    firstNumber:'',
+    secondNumber:'',
+    mathType: '',
+    display:''
+}
+
 // function to Calculate
 const  calculate = (num1, num2, mathType) => {
     let answer = 0;
@@ -21,7 +28,27 @@ const  calculate = (num1, num2, mathType) => {
     default: 
         answer ='nope';
     }
-    printToDom(answer, 'result');
+    setDisplay(answer);
 };
 
-export {calculate};
+const setDisplay = (someNumber) => {
+    calc.display = someNumber;
+    printToDom(calc.display, 'result');
+};
+
+// function to display 0 in the beginning
+const initialDisplay =()=> {
+    printToDom(0, 'result');
+}
+
+const addNumber =(num) => {
+    if(calc.mathType===''){
+        calc.firstNumber += num;
+        setDisplay(calc.firstNumber);
+    }else {
+        calc.secondNumber += num;
+        setDisplay(calc.secondNumber);
+    }
+};
+
+export {calculate, addNumber, initialDisplay};
