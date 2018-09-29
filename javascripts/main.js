@@ -1,13 +1,5 @@
-// function to multiply numbers
-const multiply = (n1, n2) => {
-    return n1*n2;
-};
-
-// function to Print to DOM
-const printToDom = (stringToPrint, divId) => {
-    const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML = stringToPrint;
-};
+import {printToDom} from './helpers/utility.js'
+import {multiply} from './helpers/maths.js'
 
 // function to Calculate
 const  calculate = (num1, num2, mathType) => {
