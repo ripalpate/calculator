@@ -4,21 +4,19 @@ const sevenButton = document.getElementById('sevenButton');
 const eightButton = document.getElementById('eightButton');
 const nineButton = document.getElementById('nineButton');
 
-const addNUmberCaller = (e) => {
+const addNumberCaller = (e) => {
     addNumber(e.target.innerHTML);
 }
 const sevenButtonEvent = () => {
-    sevenButton.addEventListener('click', addNUmberCaller);
+    sevenButton.addEventListener('click', addNumberCaller);
 };
 
 const eightButtonEvent = () => {
-    eightButton.addEventListener('click', addNUmberCaller);
+    eightButton.addEventListener('click', addNumberCaller);
 };
 
 const nineButtonEvent = () => {
-    nineButton.addEventListener('click', (e)=>{
-        console.log('you clicked', e.target.innerHTML);
-    })
+    nineButton.addEventListener('click', addNumberCaller);
 };
 
 
