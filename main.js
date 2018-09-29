@@ -3,11 +3,6 @@ const multiply = (n1, n2) => {
     return n1*n2;
 };
 
-// function to divide numbers
-// const divide = (n1, n2) => {
-//     return n1/n2;
-// };
-
 // function to Print to DOM
 const printToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
