@@ -4,5 +4,5 @@ const printToDom = (stringToPrint, divId) => {
     selectedDiv.innerHTML = stringToPrint;
 };
 
-export {printToDom}
+export {printToDom};
 // or export default printToDom and also in you import print printToDom without curly braces.
