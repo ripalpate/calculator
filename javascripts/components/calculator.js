@@ -7,7 +7,7 @@ const calc ={
     secondNumber:'',
     mathType: '',
     display:''
-}
+};
 
 // function to Calculate
 const  calculate = () => {
